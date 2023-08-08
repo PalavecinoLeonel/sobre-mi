@@ -1,0 +1,44 @@
+html { 
+    /*La etiqueta bgc la uso para cambiar el color de fondo*/
+    background-color: #045B62;
+    font-size: 20px;
+}
+    /*La etiqueta "header" la uso para darle estilo a los encabezados*/
+    header{
+        background-color: #70A1A5;
+        /*La etiqueta t-a la uso para alinear el texto al centro*/
+        text-align: center;
+        /*La etiqueta "font" la uso para cambiar la tipografia de la letra*/
+        font: italic;
+    }
+
+    /*La etiqueta "img" la uso para darle estilo a las imagenes*/
+    img {
+        /*esta etiqueta la uso para ponerle un borde facherito facherito*/
+        border-style:outset;
+    }
+
+    /*La etiqueta "ul" la uso para darle estilo a las listas*/
+    ul {
+        background-color: #02393E;
+        /*La etiqueta "padding" la uso para dar el tamaño al borde exterior de las listas*/
+        padding: 10px;
+        /*La etiqueta "border" la uso para darle un borde a las listas*/
+        border: 1px solid black;
+    }
+
+    /*La etiqueta "li" la uso para darle estilo a los items de las listas*/
+    li {
+        background-color: #fff;
+        border: 1px solid black;
+        /*La etiqueta "margin-left" la uso para dar el tamaño al margen izquierdo de los items*/
+        margin-left: 20px;
+        padding: 10px;
+    }
+
+    footer {
+        background-color: #70A1A5;
+        text-align: center;
+        font: italic;
+        font-size: 40px;
+    }

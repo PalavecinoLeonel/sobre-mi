@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Resumen del Alumno</title>
+</head>
+<body>
+    <header>
+        <!---La etiqueta "h1" la uso para generar un titulo-->
+        <h1>Información del Alumno</h1>
+    </header>
+    <!---Las etiquetas "img","width" y"height" las uso para colocar una imagen y dimensionarla-->
+    <img src="Perfil.jpg" width= "200"; height= "200";>
+
+    <!---La etiqueta "video" la uso porque todos tienen que ver este video-->
+    <video controls width= "263"; height= "263";>
+        <!---La etiqueta "source y src" son para la ruta del video-->
+        <source src="Patricio.mp4" type="video/mp4">
+        <!---y ésta segunda linea es por si el navegador no lee el primer formato del video-->
+        <source src="Patricio.avi" type="video/avi"> 
+    </video>
+    
+    <main>
+        <article>
+            <!---La etiqueta "h2" la uso para generar un titulo-->
+            <h2>Datos Básicos</h2>
+            <!---La etiqueta "ul" la uso para iniciar una lista-->
+            <ul>
+                <!---La etiqueta "li" la uso para marcar un elemento de la lista-->
+                <li><strong>Nombre:</strong>Leonel Palavecino</li>
+                <li><strong>Edad:</strong>26 años</li>
+                <li><strong>País:</strong>Argentina</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Intereses</h2>
+            <ul>
+                <li>Programación</li>
+                <li>QA</li>
+                <li>Música</li>
+                <li>Gimnasio</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Experiencias</h2>
+            <ul>
+                <li>
+                    <p>Trabajo en un programa de busqueda laboral</p>
+                </li>
+            </ul>
+        </article>
+    </main>
+    <!--La etiqueta "footer" la uso para agregar un pie de página-->
+    <footer>
+        <p>Acá se termina la página</p>
+    </footer>
+</body>
+</html>
