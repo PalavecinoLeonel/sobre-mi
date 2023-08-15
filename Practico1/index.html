@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mi Calculadora Simple</h1>
+    <p id="practico">Práctico número 1</p>
+    <div id="calculadora">
+
+        
+        <input type="number" name="primerNumero" id="primerNumero" placeholder="primer número">
+
+        <select name="operacion" id="operacion">
+            <option disabled selected>-Elige una operación</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="x">x</option>
+            <option value="%">%</option>
+        </select> 
+        <input type="number" name="segundoNumero" id="segundoNumero" placeholder="segundo número"><br><br>
+        <button id="calcular" onclick="calcular()">Calcular</button>
+        <button id="borrar" onclick="borrar()">Borrar</button>
+        <div id="resultadoFondo">
+            <p>Resultado:</p>
+            <input type="number" name="resultado" id="resultado" disabled>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+html {
+    background-color: rgb(34, 21, 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style:oblique;
+    font-size:50px;
+    text-align: center;
+    color:blanchedalmond;
+    box-shadow: 0 2px 4px black;
+    height: 60px;
+}
+
+#practico {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:40px;
+    text-align: center;
+    color: blanchedalmond;
+}
+/*---------------------------------------------------------------------------------*/
+#calculadora {
+    text-align: center;
+    padding: 100px;
+    border: 2px solid rgb(177, 129, 58);
+    border-radius: 10px;
+    background-color: rgb(255, 235, 205);
+    box-shadow: 0 20px 40px black;
+}
+
+#primerNumero {
+    text-align: center;
+    font-size:30px;
+    border-radius: 100px;
+    border: 2px solid rgb(177, 129, 58);
+}
+#operacion {
+    text-align: center;
+    font-size:30px;
+    border-radius: 100px;
+    border: 2px solid rgb(177, 129, 58);
+}
+#segundoNumero {
+    text-align: center;
+    font-size:30px;
+    border-radius: 100px;
+    border: 2px solid rgb(177, 129, 58);
+}
+
+#calcular {
+    background-color: rgb(253, 224, 181);
+    font-size:30px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+#borrar {
+    background-color: rgb(253, 224, 181);
+    font-size:30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#resultadoFondo {
+    background-color: rgb(253, 224, 181);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    box-shadow: 0 2px 4px rgb(34, 21, 7);
+}
+p {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:40px;
+    text-align: center;
+    color: rgb(34, 21, 7);
+}
+#resultado {
+    font-size:30px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 10px;
+}
