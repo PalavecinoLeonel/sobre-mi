@@ -1,0 +1,324 @@
+html {
+    background-color: #000000;
+    background: #ccc;
+    background: linear-gradient(90deg, #BEC76C, #52ACB3, #CC7835);
+
+    justify-content: center;
+    align-items: center;
+    
+}
+
+html::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #CFCF8C, #45B1BB, #D28746,  #CFCF8C, #45B1BB, #D28746);
+    background-size: 800%;
+    animation: glowing 120s linear infinite;
+}
+
+h1 {
+    -webkit-tex-fill-color: transparent;
+    font-family:monospace;
+    font-size:50px;
+    text-align: center;
+    color:white;
+    box-shadow: 2px 2px 4px black;
+    height: 60px;
+    border-radius: 6px;
+    margin: 12px;
+}
+
+h2 {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:40px;
+    margin: 0;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+#main{
+    display: flex;
+}
+
+
+
+#derecha{
+    margin-left: 70px;
+}
+
+
+
+#nombre{
+    border-radius: 12px;
+    background-color: #00000000;
+    text-align: center;
+    color:white;
+    opacity: .8;
+    font-size:40px;
+    margin-left: 280px;
+    margin-bottom: 20px;
+}
+
+#nombre:hover{
+    background-color: #00000030;
+}
+
+#nombre::placeholder{
+    color:white;
+    opacity: none;
+}
+
+#piedra{
+    padding: 0;
+}
+
+#papel{
+    padding: 0;
+}
+
+#tijera{
+    padding: 0;
+}
+
+#piedra::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #CFCF8C, #45B1BB, #D28746, #CFCF8C, #CFCF8C, #45B1BB, #D28746, #CFCF8C);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    cursor: pointer;
+}
+
+#papel::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #CFCF8C, #45B1BB, #D28746, #CFCF8C, #CFCF8C, #45B1BB, #D28746, #CFCF8C);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    cursor: pointer;
+}
+
+#tijera::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #CFCF8C, #45B1BB, #D28746, #CFCF8C, #CFCF8C, #45B1BB, #D28746, #CFCF8C);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes glowing {
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 200% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+img{
+    border-radius: 40px;
+}
+
+section{
+    display:flex;
+    width: 1050px;
+    height: 325px;
+}
+
+section button {
+    background: black;
+    cursor: pointer;
+    border: none;
+    padding: 16px 0px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 3px;
+
+    width: 0px;
+    flex-grow: 1;
+    object-fit:cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+section button:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+#maquina{
+    display: block;
+}
+
+#resultado{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 280px;
+    border-radius: 12px;
+    background-color: #00000000;
+    text-align: center;
+    color:white;
+    opacity: .8;
+    font-size:40px;
+}
+
+#jugadaCpu{
+   background: local;
+   background-color: white;
+   margin: 20px;
+   margin-top: 0px;
+   margin-left: 390px;
+   height: 26%;
+   width: 26%;
+   border-radius: 60px;
+   border-style:outset;
+}
+
+p{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:40px;
+    margin-left: 0px;
+    color: rgb(0, 0, 0);
+}
+
+#win{
+    border-radius: 12px;
+    background-color: #00000000;
+    text-align: center;
+    color:white;
+    opacity: .8;
+    font-size:40px;
+    margin-left: 120px;
+}
+
+#lose{
+    border-radius: 12px;
+    background-color: #00000000;
+    text-align: center;
+    color:white;
+    opacity: .8;
+    font-size:40px;
+    margin-left: 120px;
+}
+
+
+
+
+
+/*/----------------------------------- Mensajes emergentes ---------------------------------/*/
+.winJugarDeNuevo{
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #73fa25de, #fff01fee, #3cf5f5d3, #73fa25de, #fff01fee, #3cf5f5d3);
+    background-size: 800%;
+    border-radius: 10px;
+    animation: glowing 10s linear infinite;
+    background-size: 800%;
+    margin: none;
+    width: 56%;
+    height: 66%;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 8px;
+    display: none;
+    padding-top: 6%;
+    text-align: center;
+}
+
+.loseJugarDeNuevo{
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #fa2525de, #fa2525ee, #f53c3cd3, #fa2525de, #fa2525ee, #f53c3cd3);
+    background-size: 800%;
+    border-radius: 10px;
+    animation: glowing 10s linear infinite;
+    background-size: 800%;
+    margin: none;
+    width: 56%;
+    height: 66%;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 8px;
+    display: none;
+    padding-top: 6%;
+    text-align: center;
+}
+
+h3{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+#jugarWin{
+    padding: 0;
+    content: "";
+    position: absolute;
+    margin-left: -95px;
+
+    font-size: 30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 200px;
+    height: 100px;
+    background: linear-gradient(45deg, #CFCF8C, #45B1BB, #D28746, #CFCF8C, #CFCF8C, #45B1BB, #D28746, #CFCF8C);
+    background-size: 800%;
+    border-radius: 10px;
+    animation: glowing 10s linear infinite;
+    cursor: pointer;
+}
+
+#jugarLose{
+    padding: 0;
+    content: "";
+    position: absolute;
+    margin-left: -95px;
+
+    font-size: 30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 200px;
+    height: 100px;
+    background: linear-gradient(45deg, #CFCF8C, #45B1BB, #D28746, #CFCF8C, #CFCF8C, #45B1BB, #D28746, #CFCF8C);
+    background-size: 800%;
+    border-radius: 10px;
+    animation: glowing 10s linear infinite;
+    cursor: pointer;
+}

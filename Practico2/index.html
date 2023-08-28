@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Piedra papel o tijera</title>
+</head>
+<body>
+    <div>
+        <h1>Piedra Papel o Tijeras</h1>
+        <h2 id="tp2">TP2</h2>
+
+    </div>
+    <div id="main">
+        <!--Divido en dos partes importantes la página-->
+        <div id="izquierda">
+            <!--El jugador ingresa su nombre-->
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre del jugador">
+            <!--El jugador selecciona su jugada-->
+            <section>
+                <button id="piedra" onclick="piedra()">
+                    <img src="piedra.png" name="jugadaUsuario" width= "200"; height= "200";>
+                </button>
+                <button id="papel" onclick="papel()">
+                    <img src="Papel.png" name="jugadaUsuario" width= "200"; height= "200";>
+                </button>
+                <button id="tijera" onclick="tijera()">
+                    <img src="Tijera.png" name="jugadaUsuario" width= "200"; height= "200";>
+                </button>
+            </section>
+            <!--Se muestran los resultados y la jugada de la compu-->
+            <div id="maquina">
+                <input value="" type="text" name="resultado" id="resultado" disabled>
+        
+                <img src="Titulo.png" name="jugadaCpu" id="jugadaCpu" width= "200"; height= "200";>
+            </div>
+            <!--Muestro las ventanas emergentes al ganar alguno-->
+            <div class="winJugarDeNuevo" id="winJugarDeNuevo">
+                <h2>¡¡Ganaste 3 rondas!!</h2>
+                <h3>¿Queres jugar de nuevo?</h3>
+                <button id="jugarWin" onclick="jugarDeNuevo()">SI</button>
+            </div>
+            <div class="loseJugarDeNuevo" id="loseJugarDeNuevo">
+                <h2>Perdiste 3 rondas</h2>
+                <h3>¿Queres intentar de nuevo?</h3>
+                <button id="jugarLose" onclick="jugarDeNuevo()">SI</button>
+            </div>
+        </div>
+        <div id="derecha">
+            <p id="instrucciones">Instrucciones: Se debe elegir un nombre de jugador y elegir una de las tres opciones:<br>"piedra", "papel" o "tijeras". <br>El primero en llegar a las tres rondas ganadas, gana la partida</p>
+            <h2>Partidas ganadas</h2>
+            <input value="" type="text" name="win" id="win" disabled>
+            <h2>Partidas perdidas</h2>
+            <input value="" type="text" name="lose" id="lose" disabled>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
